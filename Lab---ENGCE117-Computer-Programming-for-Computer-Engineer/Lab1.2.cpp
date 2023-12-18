@@ -2,7 +2,7 @@
 #include <string.h>
 
 
-void *GetSet( int **data , int *num ) ;
+void GetSet( int *data[] , int *num ) ;
 
 int main() {
 	int *data, num ;
@@ -15,7 +15,7 @@ int main() {
 	return 0 ;
 }//end function
 
-void *GetSet( int **data , int *num ){
+void GetSet( int *data[] , int *num ){
 	printf("Enter the Mamber : ") ;
 	scanf("%d" , num) ;
 	*data = new int[*num];
